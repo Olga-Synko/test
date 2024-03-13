@@ -17,8 +17,24 @@ a:active,
 a:focus {
   outline: none;
 }
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  
+}
+ul,ol{
+  padding-left: 0;
+  margin: 0;
+}
+.container{
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .header-nav {
   color: #2e2f42;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
 .header-logo {
@@ -29,6 +45,7 @@ a:focus {
   font-size: 18px;
   line-height: 117%;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .logo-span {
@@ -36,6 +53,22 @@ a:focus {
 }
 .header-menu {
   font-weight: 500;
+  display: flex;
+  gap: 40px;
+  
+}
+.header-contact-list{
+  display: flex;
+  gap: 40px;
+}
+.header-container{
+  display: flex;
+  align-items: center;
+}
+.header-menu-title{
+  display: block;
+  padding: 24px 0;
+
 }
 .header-menu-title:hover,
 .header-menu-title:focus {
@@ -54,8 +87,14 @@ a:focus {
   background-color: #2e2f42;
   color: #ffffff;
   line-height: 1.07;
-
-  text-align: center;
+ text-align: center;
+ padding: 188px 0;
+}
+.head-title{
+  max-width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
 }
 .head-button {
   color: #fff;
@@ -64,6 +103,9 @@ a:focus {
   cursor: pointer;
   font-weight: 500;
   line-height: 1.5;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 button:hover,
 button:focus {
@@ -97,31 +139,75 @@ h3 {
 .portfolio-card-title {
   font-weight: 500;
   letter-spacing: 0.02em;
+} 
+.advantages{
+  padding: 120px 0;
+}
+.advantages-cards-list{
+  display: flex;
+  gap: 24px;
+  
+}
+.advantage-list{
+  width: calc((100% - 3 * 24px) /4);
 }
 .advantages-card-title {
   font-weight: 500;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-title {
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  
 }
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 .team-card {
   background-color: #fff;
+}
+.team-cards-list{
+  display: flex;
+  gap: 24px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 .team-card-name {
   font-weight: 500;
   line-break: 0.02em;
   letter-spacing: 0.02em;
 }
+.portfolio{
+padding: 120px 0;
+}
 .portfolio-title {
   text-align: center;
+  margin-bottom: 72px;
+}
+.portfolio-cards-list{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+  
+}
+
+.portfolio-card-list{
+  width: calc((100% - 2 * 24px) /3);
+}
+.portfolio-card-img{
+  display: block;
+}
+.portfolio-description{
+  
+  border-right: 1px solid #f4f4fd;
+  border-bottom: 1px solid #f4f4fd;
+  border-left: 1px solid #f4f4fd
 }
 
 footer {
@@ -130,19 +216,30 @@ footer {
   letter-spacing: 0.03em;
   line-height: 1.17;
   text-transform: uppercase;
+  padding: 100px 0;
 }
 .footer-logo {
+  display: block;
   font-family: Raleway, sans-serif;
   letter-spacing: 0.03em;
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 16px;
 }
 .logo {
   color: #f4f4fd;
 }
+.foooter-container{
+
+}
 
 .footer-text {
-  color: #f4f4fd;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  
+  font-weight: 400;
+
+color: #f4f4fd;
+
+
+width: 264px;
 }
+
